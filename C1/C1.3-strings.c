@@ -4,14 +4,14 @@ size_t f(size_t n, size_t i)
 {
     if (n < 10)
     {
-		    if (i == 0)
+        if (i == 0)
         {
             return n;
         }
         size_t y = 1 << (n - 1);
         return (i < y) ? f(n - 1, i - 1) : f(n - 1, y + y - 2 - i);
-	  }
-	  else if (n == 10)
+    }
+    else if (n == 10)
     {
         if (i < 2)
         {

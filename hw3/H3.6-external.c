@@ -135,7 +135,7 @@ int main()
     {
 	partition(series_size);
 	merge(series_size, file_size);
-	series_size <<= 1;
+	series_size *= 2;
     }
     return 0;
 }

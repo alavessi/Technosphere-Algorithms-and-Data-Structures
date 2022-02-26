@@ -46,12 +46,12 @@ std::vector<std::vector<int>> Graph::Floyd_Warshall()
     }
     for (size_t i = 0; i < N; i++)
     {
-	    for (size_t j = 0; j < N; j++)
+	for (size_t j = 0; j < N; j++)
         {
-		    for (size_t k = 0; k < N; k++)
-			{
+	    for (size_t k = 0; k < N; k++)
+	    {
                 if (d[j][i] < INF && d[i][k] < INF)
-				{
+	        {
                     d[j][k] = std::min(d[j][k], d[j][i] + d[i][k]);
                 }
             }

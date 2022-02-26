@@ -5,7 +5,7 @@ int main()
 {
     unsigned st = 0, k = 0;
     bool f = false;
-    char c = getchar();
+    int c = getchar();
     while (c != '\n')
     {
         if (f)

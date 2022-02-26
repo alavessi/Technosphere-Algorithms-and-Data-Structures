@@ -7,11 +7,11 @@ std::vector<bool> eratosthenes_sieve(size_t n)
     primes[0] = primes[1] = false;
     for (size_t i = 2; i * i <= n; i++)
     {
-	    if (primes[i])
+        if (primes[i])
         {
-		    for (size_t j = i * i; j <= n; j += i)
+	    for (size_t j = i * i; j <= n; j += i)
             {
-			    primes[j] = false;
+	        primes[j] = false;
             }
         }
     }

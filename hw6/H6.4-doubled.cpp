@@ -3,7 +3,7 @@
 #include <vector>
 #include <unordered_set>
 
-std::pair<size_t, size_t> find_repeat(size_t N, std::vector<size_t> ptab, std::vector<size_t> htab)
+std::pair<size_t, size_t> find_repeat(size_t N, const std::vector<size_t>& ptab, const std::vector<size_t>& htab)
 {
     size_t left = 0, right = N;
     while (left + 1 < right)
